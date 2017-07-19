@@ -1,3 +1,16 @@
+/*
+
+Each of these CSS elements is associated with an HTML Element, Class, or ID.
+Flip between this CSS file and the HTML to see how things line up.
+Experiment with deleting lines of code from the CSS to see how it affects the webpage when you refresh in the browser.
+
+*/
+
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -9,6 +22,8 @@ body {
 }
 
 header {
+  padding: 20px;
+  margin-bottom: 20px;
   background: #ffffff;
   border-color: #cccccc;
   font-family: 'Georgia', Times, Times New Roman, serif;
@@ -36,6 +51,56 @@ a {
   color: #d21034;
 }
 
+section {
+  padding: 20px;
+  margin: 20px;
+  background: #ccc;
+  margin-bottom: 20px;
+}
+#Top-left {
+  background-color: #666;
+  padding: 30px;
+  width: 33.3%;
+  float: left;
+}
+#Top-right {
+  float: right;
+  background-color: #888;
+  padding: 30px;
+  width: 33.3%
+
+}
+#Middle-left {
+  float: left;
+  background-color: #666;
+  padding: 30px;
+  width: 33.3%;
+}
+#Middle-right {
+  clear: right;
+  background-color: #eee;
+  width: 100%;
+  overflow:auto;
+}
+#Middle-left {
+  clear: left;
+  background-color: #eee;
+  width: 100%;
+  overflow:auto;
+}
+#Bottom-left {
+  clear: left;
+  background-color: #eee;
+  width: 100%;
+  overflow:auto;
+}
+
+}
+footer {
+  color: #777777;
+  background-color: #666666;
+}
+
 .container {
   width: 1024px;
   margin: 0 auto;
@@ -59,4 +124,10 @@ a {
   width: 200px;
   height: 200px;
   margin-right: 20px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
